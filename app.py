@@ -77,8 +77,7 @@ def wallet_explorer():
                     col1.write(f"{wallet_address}", unsafe_allow_html=True)
                     with col2:
                         st.button(f"View Wallet {index + 1}", key=wallet_address,
-                                  on_click=lambda url=complete_url: webbrowser.open(url, new=2),
-                                  use_container_width=True)
+                                  on_click=lambda url=complete_url: webbrowser.open(url, new=2))
 
                 except KeyError:
                     st.error(f"Error processing row {index+1}: 'Wallet Address' column not found.")
