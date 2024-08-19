@@ -51,7 +51,6 @@ def wallet_scraper():
 
 
 def wallet_explorer():
-    # Replace this with your desired base URL
     base_url = "https://app.cielo.finance/profile/{wallet_address}/pnl/tokens"
 
     def append_wallet_address(wallet_address):
@@ -86,7 +85,7 @@ def wallet_explorer():
 
 
 # Display both functionalities side-by-side
-st.columns([1, 1])  # Two columns with equal width
+st.columns([1, 1])
 with st.container():
     wallet_scraper()
 with st.container():
